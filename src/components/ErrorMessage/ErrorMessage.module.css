@@ -1,0 +1,16 @@
+.erorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+.errorMessageessage {
+  color: #721c24;
+  font-size: 16px;
+  text-align: center;
+}
