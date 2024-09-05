@@ -1,5 +1,3 @@
-// src/components/SearchBar/SearchBar.jsx
-
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import toast, { Toaster } from 'react-hot-toast';

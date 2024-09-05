@@ -9,7 +9,7 @@ export default function ImageGallery({
   lastPictureRef = null,
 }) {
   return (
-    <ul className={css.container}>
+    <ul className={css.galleryContainer}>
       {items.map((item, index) => {
         const {
           id,
@@ -21,7 +21,7 @@ export default function ImageGallery({
         return (
           <li
             key={id}
-            className={css.wrap}
+            className={css.galleryWrap}
             ref={isLast ? lastPictureRef : null}
           >
             <ImageCard

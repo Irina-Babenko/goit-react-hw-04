@@ -1,0 +1,11 @@
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.galleryWrap {
+  flex-basis: calc((100% - 70px) / 8);
+}

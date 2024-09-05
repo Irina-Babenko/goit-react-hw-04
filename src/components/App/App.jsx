@@ -25,8 +25,8 @@ function App() {
     const fetchImages = async () => {
       setIsLoading(true);
       try {
-        const response = await fetchPicturesWithQuery(query, page);
-        console.log('API Response:', response); // Для отладки
+        const response = await fetchPicturesWithQuery(query, page, 16);
+        console.log('API Response:', response);
 
         const newImages = response.images;
 
@@ -36,7 +36,7 @@ function App() {
 
         setImages(prevImages => [...prevImages, ...newImages]);
       } catch (err) {
-        console.error('Error fetching images:', err); // Для отладки
+        console.error('Error fetching images:', err);
         setError('Something went wrong, please try again.');
       } finally {
         setIsLoading(false);
