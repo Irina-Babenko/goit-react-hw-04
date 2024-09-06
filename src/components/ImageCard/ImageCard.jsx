@@ -3,8 +3,8 @@ import css from './ImageCard.module.css';
 
 const ImageCard = React.memo(({ src = '', alt = '', onClick = () => {} }) => {
   return (
-    <div className={css.imageCard} onClick={onClick}>
-      <img src={src} alt={alt} />
+    <div className={css.imageCard}>
+      <img src={src} alt={alt} onClick={onClick} className={css.image} />
     </div>
   );
 });
